@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset and training runs
+dataset/
+runs/
+yolov8n.pt
+dataset.yaml
+
+# Testing artifacts
+test_images/
+
+# System files
+.DS_Store
