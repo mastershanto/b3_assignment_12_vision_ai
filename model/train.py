@@ -1,5 +1,6 @@
 import os
 import shutil
+# pyrefly: ignore [missing-import]
 from ultralytics import YOLO
 from generate_data import generate_dataset
 
@@ -10,9 +11,9 @@ def main():
     else:
         print("Dataset directory found, skipping generation.")
 
-    # 2. Initialize YOLOv8 model (downloads yolov8n.pt if not present)
-    print("Loading pretrained yolov8n.pt model...")
-    model = YOLO("yolov8n.pt")
+    # 2. Initialize YOLO11 model (downloads yolo11n.pt if not present)
+    print("Loading pretrained yolo11n.pt model...")
+    model = YOLO("yolo11n.pt")
 
     # 3. Train the model
     print("Starting training...")

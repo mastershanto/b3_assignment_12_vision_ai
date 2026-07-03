@@ -6,7 +6,7 @@ from app.utils import TakaDetector
 
 app = FastAPI(
     title="Bangladeshi Taka Denomination Detection API",
-    description="A REST API serving a custom YOLOv8 model for currency note detection and bounding box prediction.",
+    description="A REST API serving a custom YOLO11 model for currency note detection and bounding box prediction.",
     version="1.0.0"
 )
 
@@ -18,7 +18,7 @@ def load_model():
     global detector
     try:
         detector = TakaDetector("model/best.pt")
-        print("YOLOv8 Model loaded successfully.")
+        print("YOLO11 Model loaded successfully.")
     except Exception as e:
         print(f"Error loading model at startup: {e}")
 

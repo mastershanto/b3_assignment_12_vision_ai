@@ -1,4 +1,4 @@
-git# Virtual environment
+# Virtual environment
 .venv/
 __pycache__/
 *.pyc
@@ -6,7 +6,7 @@ __pycache__/
 # Dataset and training runs
 dataset/
 runs/
-yolov8n.pt
+yolo*.pt
 dataset.yaml
 
 # Testing artifacts

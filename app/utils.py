@@ -12,9 +12,9 @@ class TakaDetector:
             if os.path.exists(alternative_path):
                 model_path = alternative_path
             else:
-                # Fallback to yolov8n.pt if best.pt is not available (for robust failure recovery)
-                print(f"Warning: model weights {model_path} not found. Falling back to default yolov8n.pt")
-                model_path = "yolov8n.pt"
+                # Fallback to yolo11n.pt if best.pt is not available (for robust failure recovery)
+                print(f"Warning: model weights {model_path} not found. Falling back to default yolo11n.pt")
+                model_path = "yolo11n.pt"
                 
         self.model = YOLO(model_path)
         
