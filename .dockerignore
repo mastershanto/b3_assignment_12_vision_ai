@@ -1,0 +1,11 @@
+.venv/
+dataset/
+runs/
+test_images/
+.git/
+.gitignore
+.DS_Store
+Dockerfile
+.dockerignore
+__pycache__/
+*.pyc
